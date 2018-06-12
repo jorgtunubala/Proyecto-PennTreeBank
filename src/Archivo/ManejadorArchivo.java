@@ -493,13 +493,13 @@ public class ManejadorArchivo {
                 if(orden == 1)
                     idPredecesora = -1;
                 else{
-                    parametrosAux = lista.get(orden-1).split("/");
+                    parametrosAux = lista.get(orden-2).split("/");
                     idPredecesora = this.getIdEtiquetaPreSu(parametrosAux[1]);
                 }
                 if(orden == lista.size())
                     idSucesora = -1;
                 else{
-                    parametrosAux = lista.get(orden-1).split("/");
+                    parametrosAux = lista.get(orden).split("/");
                     idSucesora = this.getIdEtiquetaPreSu(parametrosAux[1]);
                 }
                 String miTermino = parametros[0].replace("'", "''");                
